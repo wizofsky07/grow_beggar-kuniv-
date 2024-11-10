@@ -23,6 +23,6 @@ public class ItemStore extends Store<Item>{
 
     @Override
     public void addProducts(List<Item> product) {
-        //
+        //파라미터로 받은거 itemList에 추가
     }
 }
