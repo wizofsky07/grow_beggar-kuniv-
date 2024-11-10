@@ -18,7 +18,7 @@ public class GameController {
     }
 
     public boolean purchaseProduct(StoreName storeName, int ProductIndex){ //성공시 true, 실패시 false
-        return storeService.purchaseProduct(storeName, ProductIndex, poor);
+        return storeService.sellProduct(storeName, ProductIndex, poor);
     }
 
     public void getMoney(int colleagueIndex){

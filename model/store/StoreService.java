@@ -19,7 +19,7 @@ public class StoreService {
         stores.put(StoreName.Colleague, colleagueStore);
     }
 
-    public boolean purchaseProduct(StoreName storeName, int productIndex, Poor poor){ //성공시 true, 실패시 false
+    public boolean sellProduct(StoreName storeName, int productIndex, Poor poor){ //성공시 true, 실패시 false
         Store<? extends Product> store = stores.get(storeName);
         return store.sellProduct(productIndex, poor);
     }
